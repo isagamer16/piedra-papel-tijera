@@ -1,3 +1,15 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    if (receivedNumber == 1) {
+        let mi_jugada = 0
+        if (mi_jugada == 1) {
+            basic.showString("empate")
+        }
+    } else if (false) {
+    	
+    } else {
+    	
+    }
+})
 input.onButtonPressed(Button.A, function () {
     tool = randint(1, 1)
     basic.showIcon(IconNames.SmallSquare)
