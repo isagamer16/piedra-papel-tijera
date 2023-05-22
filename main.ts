@@ -43,12 +43,15 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.SmallSquare)
+    radio.sendNumber(1)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(IconNames.Scissors)
+    radio.sendNumber(3)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Square)
+    radio.sendNumber(2)
 })
 radio.setGroup(107)
 basic.forever(function () {
