@@ -1,28 +1,55 @@
 radio.onReceivedNumber(function (receivedNumber) {
+    let mi_jugada = 0
     if (receivedNumber == 1) {
-        let mi_jugada = 0
         if (mi_jugada == 1) {
-            basic.showString("empate")
+            basic.showString("EMPATE")
         }
-    } else if (false) {
-    	
+    } else if (receivedNumber == 1) {
+        if (mi_jugada == 2) {
+            basic.showString("PERDEDOR")
+        }
+    } else if (receivedNumber == 1) {
+        if (mi_jugada == 3) {
+            basic.showString("GANADOR")
+        }
     } else {
-    	
+        if (receivedNumber == 2) {
+            if (mi_jugada == 1) {
+                basic.showString("PERDEDOR")
+            }
+        } else if (receivedNumber == 2) {
+            if (mi_jugada == 2) {
+                basic.showString("EMPATE")
+            }
+        } else if (receivedNumber == 2) {
+            if (mi_jugada == 3) {
+                basic.showString("GANADOR")
+            }
+        }
+        if (receivedNumber == 3) {
+            if (mi_jugada == 1) {
+                basic.showString("PERDEDOR")
+            }
+        } else if (receivedNumber == 3) {
+            if (mi_jugada == 2) {
+                basic.showString("GANADOR")
+            }
+        } else if (receivedNumber == 3) {
+            if (mi_jugada == 3) {
+                basic.showString("EMPATE")
+            }
+        }
     }
 })
 input.onButtonPressed(Button.A, function () {
-    tool = randint(1, 1)
     basic.showIcon(IconNames.SmallSquare)
 })
 input.onButtonPressed(Button.AB, function () {
-    tool = randint(3, 3)
     basic.showIcon(IconNames.Scissors)
 })
 input.onButtonPressed(Button.B, function () {
-    tool = randint(2, 2)
     basic.showIcon(IconNames.Square)
 })
-let tool = 0
 radio.setGroup(107)
 basic.forever(function () {
 	
