@@ -4,40 +4,31 @@ radio.onReceivedNumber(function (receivedNumber) {
         if (mi_jugada == 1) {
             basic.showString("EMPATE")
         }
-    } else if (receivedNumber == 1) {
         if (mi_jugada == 2) {
             basic.showString("PERDEDOR")
         }
-    } else if (receivedNumber == 1) {
         if (mi_jugada == 3) {
             basic.showString("GANADOR")
         }
-    } else {
-        if (receivedNumber == 2) {
-            if (mi_jugada == 1) {
-                basic.showString("PERDEDOR")
-            }
-        } else if (receivedNumber == 2) {
-            if (mi_jugada == 2) {
-                basic.showString("EMPATE")
-            }
-        } else if (receivedNumber == 2) {
-            if (mi_jugada == 3) {
-                basic.showString("GANADOR")
-            }
+    } else if (receivedNumber == 2) {
+        if (mi_jugada == 1) {
+            basic.showString("PERDEDOR")
         }
-        if (receivedNumber == 3) {
-            if (mi_jugada == 1) {
-                basic.showString("PERDEDOR")
-            }
-        } else if (receivedNumber == 3) {
-            if (mi_jugada == 2) {
-                basic.showString("GANADOR")
-            }
-        } else if (receivedNumber == 3) {
-            if (mi_jugada == 3) {
-                basic.showString("EMPATE")
-            }
+        if (mi_jugada == 2) {
+            basic.showString("EMPATE")
+        }
+        if (mi_jugada == 3) {
+            basic.showString("GANADOR")
+        }
+    } else if (receivedNumber == 3) {
+        if (mi_jugada == 1) {
+            basic.showString("PERDEDOR")
+        }
+        if (mi_jugada == 2) {
+            basic.showString("GANADOR")
+        }
+        if (mi_jugada == 3) {
+            basic.showString("EMPATE")
         }
     }
 })
